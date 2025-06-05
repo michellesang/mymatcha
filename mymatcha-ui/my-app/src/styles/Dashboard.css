@@ -1,0 +1,29 @@
+/* src/styles/Dashboard.css */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.dashboard-header {
+    margin-top: 32px;
+}
+
+.dashboard-title {
+    margin-bottom: 24px !important;
+    color: #2e7d32;
+}
+
+.dashboard-card {
+    padding: 24px;
+    height: 100%;
+    transition: box-shadow 0.3s ease;
+}
+
+.dashboard-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card-title {
+    margin-bottom: 16px !important;
+    color: #1b5e20;
+}

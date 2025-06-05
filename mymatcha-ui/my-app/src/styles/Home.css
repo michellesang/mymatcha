@@ -1,0 +1,76 @@
+.home-container {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/matcha_setup.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    z-index: 0;
+}
+
+.background-gradient {
+    position: absolute;
+    top: -10%;
+    left: -10%;
+    width: 120%;
+    height: 70%;
+    background: linear-gradient(
+            135deg,
+            rgba(255, 146, 165, 0.2) 0%,
+            rgba(255, 218, 224, 0.2) 25%,
+            rgba(234, 255, 234, 0.2) 50%,
+            rgba(255, 146, 165, 0.15) 100%
+    );
+    transform: skewY(-6deg);
+    z-index: 1;
+}
+
+.home-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+    padding: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.home-title {
+    margin-bottom: 1rem !important;
+}
+
+.home-subtitle {
+    margin-bottom: 2rem !important;
+    opacity: 0.8;
+}
+
+.home-cta {
+    background-color: #ff92a5 !important;
+    color: white !important;
+    padding: 0.8rem 2rem !important;
+    border-radius: 25px !important;
+    text-transform: none !important;
+    font-size: 1.1rem !important;
+    box-shadow: 0 4px 6px rgba(255, 146, 165, 0.2) !important;
+    transition: transform 0.2s ease-in-out !important;
+}
+
+.home-cta:hover {
+    transform: translateY(-2px);
+    background-color: #ff7f96 !important;
+}

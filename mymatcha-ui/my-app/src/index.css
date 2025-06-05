@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: "Neue Montreal";
+    font-weight: 200;
+    src: url("assets/Neue-montreal/NeueMontreal-Light.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Neue Montreal";
+    font-weight: 400;
+    src: url("assets/Neue-montreal/NeueMontreal-Regular.otf") format("opentype");
+}
+
+:root {
+    font-family: "Neue Montreal", system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+    color: black;
+    background-color: #f5f5dc;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #ff92a5 rgba(255, 255, 183, 0);
+}
+
+body {
+    margin: 0;
+    background-color: #ffffb7;
+    min-height: 100vh;
+}
+
+/* Webkit scrollbar styles (Chrome, Safari, Edge) */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffb7;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffffb7;
+    border-radius: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+}

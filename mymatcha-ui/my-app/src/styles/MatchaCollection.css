@@ -1,0 +1,197 @@
+.collection-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(255, 192, 203, 0.2);
+    margin: 2rem auto;
+}
+
+.collection-title {
+    color: #ff92a5;
+    font-size: 1.8rem;
+    margin-bottom: 3rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.matcha-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 146, 165, 0.1);
+    transition: all 0.3s ease;
+}
+
+.matcha-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 20px rgba(255, 192, 203, 0.2);
+    cursor: pointer;
+}
+
+.card-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.matcha-brand {
+    color: #ff92a5;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+    text-transform: lowercase;
+}
+
+.matcha-name {
+    color: #666;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+    text-transform: lowercase;
+}
+
+.matcha-rating {
+    color: #ff92a5;
+    margin-bottom: 0.5rem;
+}
+
+.matcha-price {
+    color: #ff92a5;
+    font-weight: 500;
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 3rem 2rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(255, 192, 203, 0.2);
+    max-width: 400px;
+    width: 90%;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+.modal-title {
+    color: #ff92a5;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: lowercase;
+}
+
+.MuiButton-root.edit-button {
+    background-color: #ffd1d9 !important;
+    color: white !important;
+    text-transform: lowercase;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.MuiButton-root.edit-button:hover {
+    background-color: #ffb6c1 !important;
+    box-shadow: 0 4px 15px rgba(255, 182, 193, 0.4);
+    transform: translateY(-2px);
+}
+
+.edit-button, .cancel-button {
+    color: #ffd1d9;
+    text-transform: lowercase;
+    padding: 0.8rem;
+    font-size: 1.1rem;
+}
+
+.edit-button:hover, .cancel-button:hover {
+    background-color: #ffb6c1; /* Slightly darker pastel pink */
+    box-shadow: 0 4px 15px rgba(255, 182, 193, 0.4);
+    transform: translateY(-2px);
+}
+
+.edit-input {
+    margin-bottom: 1rem;
+}
+
+.edit-input .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #ffb6c1;
+}
+
+.edit-input .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #ffd1d9;
+}
+
+.edit-input .MuiInputLabel-root {
+    color: #ff92a5;
+    text-transform: lowercase;
+}
+
+.action-button {
+    background-color: #ffd1d9; /* Pastel pink */
+    color: white;
+    text-transform: lowercase;
+    padding: 0.8rem;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.action-button:hover {
+    background-color: #ffb6c1; /* Slightly darker pastel pink */
+    box-shadow: 0 4px 15px rgba(255, 182, 193, 0.4);
+    transform: translateY(-2px);
+}
+
+.save-button {
+    background-color: #ffd1d9; /* Pastel pink */
+    color: white;
+}
+
+.save-button:hover {
+    background-color: #ffb6c1;
+}
+
+.delete-button {
+    background-color: #ffd1d9; /* Pastel pink */
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #ffb6c1;
+}
+
+.error-message {
+    background-color: #ffe6e6;
+    color: #ff6b6b;
+    padding: 0.8rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    text-transform: lowercase;
+}
+
+.dialog-paper {
+    border-radius: 15px;
+    padding: 2rem;
+}
+
+.dialog-title {
+    color: #ff92a5;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: lowercase;
+}
+
+@media (max-width: 600px) {
+    .collection-container {
+        margin: 1rem;
+    }
+}

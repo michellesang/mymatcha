@@ -1,0 +1,86 @@
+.login-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(255, 192, 203, 0.2);
+    max-width: 400px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.login-container .login-title {
+    color: #ff92a5;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.login-container .login-input {
+    margin-bottom: 1rem;
+}
+
+.login-container .login-input .input-text {
+    border-radius: 8px;
+}
+
+.login-container .login-input .input-text:focus {
+    border-color: #ffb6c1;
+}
+
+.login-container .login-input .input-label {
+    color: #ff92a5;
+    text-transform: lowercase;
+}
+
+.login-container .login-button {
+    background-color: #ffb6c1;
+    color: white;
+    text-transform: lowercase;
+    padding: 0.8rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.login-container .login-button:hover {
+    background-color: #ff92a5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(255, 182, 193, 0.4);
+}
+
+.error-message {
+    background-color: #ffe6e6;
+    color: #ff6b6b;
+    padding: 0.8rem;
+    border-radius: 8px;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    text-transform: lowercase;
+}
+
+.login-container .switch-link {
+    color: #ff92a5;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: lowercase;
+    transition: color 0.3s ease;
+}
+
+.login-container .switch-link:hover {
+    color: #ff7b8f;
+}
+
+/* Override Material-UI styles with more specific selectors */
+.login-container .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #ffb6c1;
+}
+
+.login-container .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+    border-color: #ffd1d9;
+}
+
+.login-container .MuiTextField-root {
+    margin-bottom: 1rem;
+}
