@@ -6,6 +6,7 @@ from pydantic import BaseModel
 from supabase import create_client, Client
 
 from models.matcha import MatchaCreate
+from fastapi.staticfiles import StaticFiles
 
 url: str = "https://atrclhpmlapmfjbfwmtz.supabase.co"
 key: str = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImF0cmNsaHBtbGFwbWZqYmZ3bXR6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDYwNTA2MDgsImV4cCI6MjA2MTYyNjYwOH0.QNNEdHHc2jhW8v-z2_opkYw_VH_xntLJ5KqC2lWlbe4"
@@ -77,7 +78,6 @@ async def sign_out():
         raise HTTPException(status_code=400, detail=str(e))
 
 
-# Protected route example
 async def get_current_user(token: Optional[str] = Depends()):
     try:
         user = supabase.auth.get_user(token)
@@ -95,8 +95,7 @@ async def protected_route(user=Depends(get_current_user)):
     return {"message": "This is a protected route", "user_email": user.user.email}
 
 
-# Your existing endpoints
-@app.get("/")
+@app.get("/test")
 def read_root():
     return {"Hello": "World"}
 
@@ -173,3 +172,6 @@ def get_matcha_stats(authorization: Optional[str] = Header(None)):
         "count": count,
         "averageRating": round(average_rating, 1)
     }
+
+
+app.mount("/", StaticFiles(directory="static", html=True), name="static")

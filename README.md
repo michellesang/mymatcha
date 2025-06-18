@@ -10,7 +10,7 @@ i created this web app for matcha lovers, designed for minimalism and practicali
 it includes a UI build with React and Tailwind CSS, and an API built with FastAPI.
 
 ---
-### how to use it yourself
+### how to use it yourself!
 1. clone the repo
 ```bash
 git clone https://github.com/michellesang/mymatcha.git
@@ -36,7 +36,6 @@ npm install
 npm run dev
 ```
 6. open your browser and go to `http://localhost:3000` to view the app
-7. enjoy your matcha journey! 🍵
 
 ---
 ### want to chat? 

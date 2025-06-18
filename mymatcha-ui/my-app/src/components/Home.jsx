@@ -1,15 +1,19 @@
 import React from 'react';
-import { Container, Typography, Button, Box } from '@mui/material';
-import { useNavigate } from 'react-router-dom';
+import {Box, Button, Container, Typography} from '@mui/material';
+import {useNavigate} from 'react-router-dom';
 import '../styles/Home.css';
+import matchaSetup from '../assets/matcha_setup.JPG';
 
 const Home = () => {
     const navigate = useNavigate();
 
     return (
         <div className="home-container">
-            <div className="background-image" />
-            <div className="background-gradient" />
+            <div
+                className="background-image"
+                style={{backgroundImage: `url(${matchaSetup})`}}
+            />
+            <div className="background-gradient"/>
             <Container className="home-simple-container">
                 <Box className="home-hero">
                     <Typography variant="h3" className="home-title">
